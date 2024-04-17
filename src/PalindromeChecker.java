@@ -3,8 +3,7 @@ import java.util.Scanner;
 public class PalindromeChecker {
     public static String inputChanger(String input) {
         input = input.toLowerCase();
-        input = input.replace(",", "");
-        input = input.replace("!", "");
+        input = input.replaceAll("[^a-z]", ""); // Poistaa kaikki ei-aakkoset merkit
         return input;
     }
 
