@@ -1,10 +1,7 @@
 import java.util.Scanner;
 
 public class PalindromeChecker {
-
-
-
-    public static String transformInput(String input) {
+    public static String inputChanger(String input) {
         input = input.toLowerCase();
         input = input.replace(",", "");
         input = input.replace("!", "");
@@ -28,17 +25,17 @@ public class PalindromeChecker {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Input: ");
+        System.out.print("Insert your input here: ");
         String input = scanner.nextLine();
 
-        String transformed = transformInput(input);
+        String transformed = inputChanger(input);
 
         // Checks the validity of the input palindrome or not
         boolean isPalindrome = checkPalindrome(transformed);
         if (isPalindrome) {
-            System.out.println("The transformed input is a palindrome.");
+            System.out.println("Is a palindrome.");
         } else {
-            System.out.println("The transformed input is not a palindrome.");
+            System.out.println("Is not a palindrome.");
         }
     }
 }
