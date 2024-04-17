@@ -9,7 +9,7 @@ public class PalindromeChecker {
     }
 
     // Checks if the input is a palindrome/same backwards
-    public static boolean checkPalindrome(String input) {
+    public static boolean palindromCheck(String input) {
         String reversed = reverseString(input);
         return input.equals(reversed);
     }
@@ -31,7 +31,7 @@ public class PalindromeChecker {
         String transformed = inputChanger(input);
 
         // Checks the validity of the input palindrome or not
-        boolean isPalindrome = checkPalindrome(transformed);
+        boolean isPalindrome = palindromCheck(transformed);
         if (isPalindrome) {
             System.out.println("Is a palindrome.");
         } else {
