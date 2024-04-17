@@ -14,11 +14,7 @@ public class PalindromeChecker {
     // Checks if the input is a palindrome/same backwards
     public static boolean checkPalindrome(String input) {
         String reversed = reverseString(input);
-        if (input.equals(reversed)) {
-            return true;
-        } else {
-            return false;
-        }
+        return input.equals(reversed);
     }
 
     public static String reverseString(String input) {
