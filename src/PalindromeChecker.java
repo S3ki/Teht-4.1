@@ -30,7 +30,7 @@ public class PalindromeChecker {
 
         String transformed = inputChanger(input);
 
-        // Checks the validity of the input palindrome or not
+        // Checks the validity of the input / palindrome or not
         boolean isPalindrome = palindromCheck(transformed);
         if (isPalindrome) {
             System.out.println("Is a palindrome.");
