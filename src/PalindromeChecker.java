@@ -7,7 +7,6 @@ public class PalindromeChecker {
         return input;
     }
 
-    // Checks if the input is a palindrome/same backwards
     public static boolean palindromCheck(String input) {
         String reversed = reverseString(input);
         return input.equals(reversed);
